@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+body {
+  overflow: hidden;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Ubuntu Mono", "LXGW WenKai Mono TC", sans-serif;
+  min-height: 100vh;
+  background: url("/images/背景2.png") no-repeat center center / cover;
+}
+
+.main-container {
+  max-width: 1100px;
+  min-height: 100vh;
+  width: 100%;
+  /* background: red; */
+  margin: auto;
+}
+
+.main-container .home p {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  font-size: large;
+  color: rgb(87, 84, 84);
+  bottom: 120px;
+  cursor: default;
+  -webkit-animation: bounce 2s infinite;
+}
+
+.main-container .home .basic-footer .brand {
+  max-width: 100%;
+  min-height: 100vh;
+  /* top: 80px; */
+  position: fixed;
+  text-align: center;
+  /* background: red; */
+}
