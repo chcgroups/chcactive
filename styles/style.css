@@ -27,15 +27,28 @@ body {
   background: url("/images/背景2.png") no-repeat center center / cover;
 }
 
-.main-container {
-  max-width: 1100px;
-  min-height: 100vh;
+.title-text {
   width: 100%;
-  /* background: red; */
-  margin: auto;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  -webkit-animation: bounce 1.8s infinite;
 }
 
-.main-container .home p {
+.flower-left {
+  position: fixed;
+  left: 180px;
+  top: 350px;
+}
+
+.comp-title {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 250px;
+}
+
+.start-text p {
   width: 100%;
   text-align: center;
   position: fixed;
@@ -43,14 +56,5 @@ body {
   color: rgb(87, 84, 84);
   bottom: 120px;
   cursor: default;
-  -webkit-animation: bounce 2s infinite;
-}
-
-.main-container .home .basic-footer .brand {
-  max-width: 100%;
-  min-height: 100vh;
-  /* top: 80px; */
-  position: fixed;
-  text-align: center;
-  /* background: red; */
+  -webkit-animation: bounce 2.5s infinite;
 }
