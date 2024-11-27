@@ -18,6 +18,18 @@
   }
 }
 
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 body {
   overflow: hidden;
   line-height: 1.5;
@@ -28,24 +40,30 @@ body {
 }
 
 .title-text {
-  width: 100%;
+  transform: translate(-45%, -50%);
+  left: 50%;
+  align-items: center;
   text-align: center;
   position: fixed;
-  top: 100px;
-  -webkit-animation: bounce 1.8s infinite;
+  top: 20%;
+  /* -webkit-animation: bounce 0.3s infinite; */
 }
 
-.flower-left {
-  position: fixed;
-  left: 180px;
-  top: 350px;
+.title-text img {
+  animation: bounce 0.3s infinite;
 }
 
 .comp-title {
-  width: 100%;
-  text-align: center;
   position: fixed;
-  top: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  object-fit: cover;
+}
+
+.comp-title img {
+  object-fit: cover;
+  animation: zoomInOut 5s infinite ease-in-out;
 }
 
 .start-text p {
@@ -56,5 +74,27 @@ body {
   color: rgb(87, 84, 84);
   bottom: 120px;
   cursor: default;
-  -webkit-animation: bounce 2.5s infinite;
+  -webkit-animation: bounce 4s infinite;
+}
+
+.brand img {
+  /* width: 100%; */
+  transform: translate(-50%, -50%);
+  left: 50%;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.snake-left img {
+  position: fixed;
+  bottom: 10px;
+  left: 12px;
+}
+
+.snake-right img {
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
 }
